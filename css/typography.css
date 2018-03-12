@@ -1,0 +1,71 @@
+.main-header {
+    font-size: 9vw;
+    font-variant: small-caps;
+    font-family: 'Bank Gothic Medium';
+    font-weight: normal;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.main-header > span {
+    width: 100%;
+    text-align: center;
+}
+
+p,
+ul,
+table {
+    font-size: 1.25em;
+}
+
+p {
+    margin: 0 0 1.3em 0;
+    max-width: 57em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 1.414em 0 0.5em;
+    line-height: 1.2;
+    color: #384F56;
+    font-weight: 700;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 1.62em;
+}
+
+h2 {
+    font-size: 1.518em;
+}
+
+h2:before {
+    content: '❖';
+    margin-right: 0.2rem;
+    width: 1.2rem;
+    font-weight: 100;
+    color: #7fbbc1;
+}
+
+h3 {
+    font-size: 1.422em;
+}
+
+h4 {
+    font-size: 1.333em;
+}
+
+a,
+a:link,
+a:visited {
+    color: #374e57;
+    text-decoration: underline;
+}
+
+a:hover,
+a:active {
+    color: #7fbbc1;
+}

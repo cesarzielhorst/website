@@ -1,0 +1,26 @@
+{
+  "name": "cesar.nl",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Selwyn Versteeg",
+  "scripts": {
+    "prestart": "rm -r dist/* && mkdir dist/css dist/js dist/i",
+    "start": "npm run html && npm run css && npm run js && npm run img",
+    "poststart": "cp robots.txt klachtprocedure.pdf dist && cp -r f dist",
+    "html": "htmlprocessor *.html -o dist",
+    "css": "cat css/reset.css css/fonts.css css/main.css css/typography.css css/responsive.css css/animation.css | autoprefixer | cleancss -o dist/css/min.css",
+    "js": "cat node_modules/textfit/textFit.js js/textFitHeader.js | uglifyjs -o dist/js/min.js",
+    "img": "imagemin i/**/**/* dist/i",
+    "zip": "zip -rq cesar.zip dist/*"
+  },
+  "devDependencies": {
+    "autoprefixer": "^5.1.1",
+    "clean-css": "^3.2.9",
+    "htmlprocessor": "^0.1.10",
+    "imagemin": "^3.1.0",
+    "uglify-js": "^2.4.21"
+  },
+  "dependencies": {
+    "textfit": "^2.2.2"
+  }
+}

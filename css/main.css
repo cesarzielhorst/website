@@ -1,0 +1,132 @@
+/* ===[ Colors ]=== */
+/*
+    color: #374e57;
+    color: #7fbbc1;
+    color: #81c2c0;
+    color: #384f56;
+    color: #fff;
+*/
+/* ===[ Main ]=== */
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 1.45;
+    margin: 1.3em auto;
+    max-width: 75em;
+    padding: 0.5em;
+    overflow-x: hidden;
+}
+/* ===[ Header ]=== */
+
+.header-bar {
+    align-items: flex-end;
+    display: flex;
+    max-height: 270px;
+}
+
+.header-bar > div > img {
+    display: none;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contact {
+    color: #7fbbc1;
+    font-family: 'Sanvito Pro';
+    font-size: 1.25em;
+}
+
+.contact > ul > li {
+    list-style: disc inside none;
+    margin: 0 0 0 1.3rem;
+    white-space: nowrap;
+}
+
+/* ===[ Navigation ]=== */
+
+nav {
+    background: #81c2c0;
+    font-weight: bold;
+    margin: 1.3em 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav > ul > a {
+    border-bottom: 0.2em solid #fff;
+    display: block;
+    padding: 1rem;
+    transition: border-bottom 0.75s ease;
+}
+
+nav > ul > a:hover {
+    border-bottom-color: #374e57
+}
+
+nav > ul > a:hover > li {
+    color: #374e57
+}
+
+nav > ul > a > li {
+    color: #fff;
+    transition: color 0.75s ease;
+}
+/* ===[ Footer ]=== */
+
+footer {
+    overflow: hidden;
+    padding: 1.3rem 0 0 0;
+    position: relative;
+}
+
+address {
+    margin-top: 1.3em
+}
+
+.organisations {
+    clear: both;
+    margin: 1.3rem 0;
+}
+
+.organisations > a {
+    margin: 0 1.3rem 0 0
+}
+/* ===[ Classes ]=== */
+
+.dashed-list > li:before {
+    content: '-';
+    margin-right: 0.4rem;
+}
+
+.no-margin {
+    margin: 0
+}
+
+.margin-bottom {
+    margin-bottom: 1.3em
+}
+
+.active {
+    border-bottom: 0.2em solid #374e57
+}
+
+.active > li {
+    color: #374e57
+}
+/* ===[ Special ]=== */
+
+table > tbody > tr > td {
+    padding: 0 1em 0 0
+}
+
+.block-links a {
+    text-decoration: none !important;
+}
+
+.contact a {
+    color: #7fbbc1 !important;
+}

@@ -1,0 +1,14 @@
+.header-bar > div > img {
+    animation-name: fadein;
+    animation-duration: 1.2s;
+    animation-delay: 0;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

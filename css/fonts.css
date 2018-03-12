@@ -1,0 +1,13 @@
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Sanvito Pro';
+    src: url("../f/SanvitoPro.woff") format("woff"), url("../f/SanvitoPro.ttf") format("truetype"), url("../f/SanvitoPro.svg") format("svg");
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Bank Gothic Medium';
+    src: url("../f/BankGothicMedium.woff") format("woff"), url("../f/BankGothicMedium.ttf") format("truetype"), url("../f/BankGothicMedium.svg") format("svg");
+}

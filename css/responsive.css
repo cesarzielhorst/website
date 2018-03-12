@@ -1,0 +1,152 @@
+@media (min-width: 0em) {
+    .header-bar > div:nth-child(3n) > img {
+        display: block;
+    }
+    .header-bar > div:nth-child(3) > img {
+        width: 75%;
+    }
+}
+
+@media (min-width: 25em) {
+    .header-bar > div:nth-child(4) > img {
+        display: block;
+    }
+    table > tbody > tr > td {
+        padding: 0 1.3em;
+    }
+    table > tbody > tr > td:last-child {
+        padding: 0;
+    }
+    .margin-left {
+        margin-left: 1.3em;
+    }
+}
+
+@media (min-width: 40em) {
+    .header-bar > div:nth-child(1) > img {
+        display: block;
+    }
+    .main-header {
+        font-size: 6.5vw;
+    }
+    .avatar {
+        float: left;
+        margin: 0 1.3rem 1.3rem 0;
+    }
+    footer {
+        margin-left: 1.7rem;
+    }
+    p,
+    address {
+        margin-left: 1.7rem;
+    }
+    table > tbody > tr > td:last-child {
+        padding: 0 1.3em;
+    }
+}
+
+@media (min-width: 55em) {
+    .header-bar > div:nth-child(2) > img {
+        display: block;
+    }
+    nav {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 6em;
+        font-size: 90%;
+    }
+    nav > ul {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    nav > ul > a {
+        flex-grow: 1;
+        border: 0;
+        position: relative;
+        align-self: center;
+    }
+    nav > ul > a + a > li:after {
+        content: '';
+        width: 2px;
+        height: 2em;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -1em;
+    }
+    .active {
+        border: 0;
+        position: relative;
+    }
+    .active > li {
+        border-bottom: 2px solid #374e57;
+    }
+    .header-bar > div:nth-child(5) > img {
+        display: block;
+    }
+    .contact > ul > li {
+        float: left;
+    }
+    .contact > ul > li:first-child {
+        list-style: none;
+    }
+    .header-bar > div:nth-child(7) > img {
+        width: 75%;
+        float: right;
+        display: block;
+    }
+    .organisations {
+        position: absolute;
+        right: 0;
+        bottom: -7px;
+        margin: 0;
+    }
+    .avatar {
+        margin-bottom: 0;
+    }
+    .contact > ul > li {
+        margin: 0;
+    }
+    .contact > ul > li + li {
+        margin: 0 0 0 1.3rem;
+    }
+    .main-header {
+        overflow-x: hidden;
+    }
+    .main-header > span {
+        position: relative;
+        left: -0.1em;
+        text-align: left;
+    }
+}
+
+@media (min-width: 75em) {
+    .main-header {
+        font-size: 5.25vw;
+    }
+}
+
+@media (min-width: 100em) {
+    .main-header {
+        font-size: 4.5vw;
+    }
+}
+
+/* To fit the header text on small and big screens */
+@media (max-width: 55em) {
+    .main-header {
+        white-space: normal !important;
+    }
+}
+
+@media (min-width: 55em) {
+    .main-header {
+        white-space: nowrap !important;
+    }
+}
