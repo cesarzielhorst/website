@@ -4,20 +4,21 @@
   "description": "",
   "author": "Selwyn Versteeg",
   "scripts": {
-    "prestart": "rm -r dist/* && mkdir dist/css dist/js dist/i",
-    "start": "npm run html && npm run css && npm run js && npm run img",
-    "poststart": "cp robots.txt klachtprocedure.pdf dist && cp -r f dist",
+    "prestart": "rm -rf dist/* && mkdir -p dist/css dist/js dist/i dist/f",
+    "start": "npm run html && npm run css && npm run js && npm run img && npm run fonts",
+    "poststart": "cp robots.txt klachtprocedure.pdf dist",
     "html": "htmlprocessor *.html -o dist",
     "css": "cat css/reset.css css/fonts.css css/main.css css/typography.css css/responsive.css css/animation.css | autoprefixer | cleancss -o dist/css/min.css",
     "js": "cat node_modules/textfit/textFit.js js/textFitHeader.js | uglifyjs -o dist/js/min.js",
-    "img": "imagemin i/**/**/* dist/i",
-    "zip": "zip -rq cesar.zip dist/*"
+    "img": "imagemin i/**/**/* --out-dir=dist/i",
+    "zip": "zip -rq cesar.zip dist/*",
+    "fonts": "cp -rf f dist"
   },
   "devDependencies": {
     "autoprefixer": "^5.1.1",
     "clean-css": "^3.2.9",
     "htmlprocessor": "^0.1.10",
-    "imagemin": "^3.1.0",
+    "imagemin-cli": "^3.0.0",
     "uglify-js": "^2.4.21"
   },
   "dependencies": {
