@@ -60,7 +60,7 @@ nav > ul > a {
     border-bottom: 0.2em solid #fff;
     display: block;
     padding: 1rem;
-    transition: border-bottom 0.75s ease;
+    transition: border-bottom 0.3s ease-out;
 }
 
 nav > ul > a:hover {
@@ -73,7 +73,7 @@ nav > ul > a:hover > li {
 
 nav > ul > a > li {
     color: #fff;
-    transition: color 0.75s ease;
+    transition: color 0.3s ease-out;
 }
 /* ===[ Footer ]=== */
 
