@@ -6,7 +6,7 @@
   "scripts": {
     "prestart": "rm -rf dist/* && mkdir -p dist/css dist/js dist/i dist/f",
     "start": "npm run html && npm run css && npm run js && npm run img && npm run fonts",
-    "poststart": "cp robots.txt klachtprocedure.pdf dist",
+    "poststart": "cp robots.txt *.pdf dist",
     "html": "htmlprocessor *.html -o dist",
     "css": "cat css/reset.css css/fonts.css css/main.css css/typography.css css/responsive.css css/animation.css | autoprefixer | cleancss -o dist/css/min.css",
     "js": "cat node_modules/textfit/textFit.js js/textFitHeader.js | uglifyjs -o dist/js/min.js",
