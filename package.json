@@ -8,20 +8,21 @@
     "start": "npm run html && npm run css && npm run js && npm run img && npm run fonts",
     "poststart": "cp robots.txt *.pdf dist",
     "html": "htmlprocessor *.html -o dist",
-    "css": "cat css/reset.css css/fonts.css css/main.css css/typography.css css/responsive.css css/animation.css | autoprefixer | cleancss -o dist/css/min.css",
+    "css": "cat css/reset.css css/fonts.css css/main.css css/typography.css css/responsive.css css/animation.css | postcss --use autoprefixer | cleancss -o dist/css/min.css",
     "js": "cat node_modules/textfit/textFit.js js/textFitHeader.js | uglifyjs -o dist/js/min.js",
     "img": "imagemin i/**/**/* --out-dir=dist/i",
     "zip": "zip -rq cesar.zip dist/*",
     "fonts": "cp -rf f dist"
   },
   "devDependencies": {
-    "autoprefixer": "^5.1.1",
-    "clean-css": "^3.2.9",
-    "htmlprocessor": "^0.1.10",
-    "imagemin-cli": "^3.0.0",
-    "uglify-js": "^2.4.21"
+    "autoprefixer": "^9.7.5",
+    "clean-css-cli": "^4.3.0",
+    "htmlprocessor": "^0.2.6",
+    "imagemin-cli": "^5.1.0",
+    "postcss-cli": "^7.1.0",
+    "uglify-js": "^3.8.1"
   },
   "dependencies": {
-    "textfit": "^2.2.2"
+    "textfit": "^2.4.0"
   }
 }
